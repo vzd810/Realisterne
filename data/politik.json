@@ -1,0 +1,166 @@
+{
+  "areas": [
+    {
+      "slug": "oekonomi",
+      "title": "Økonomi",
+      "lead": "Det skal kunne betale sig at arbejde, skabe og investere. Vi sænker skatten på arbejde og giver iværksættere bedre vilkår.",
+      "blocks": [
+        {
+          "heading": "Det vil vi",
+          "type": "check",
+          "items": [
+            "Lavere skat på arbejde, så det altid kan betale sig at yde en ekstra indsats.",
+            "Mere favorable vilkår for iværksættere, så flere tør starte og bygge virksomhed i Danmark."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "forsvar",
+      "title": "Forsvar",
+      "lead": "Et trygt, sikkert og frit Danmark kræver et stærkt forsvar og klare alliancer.",
+      "blocks": [
+        {
+          "heading": "Et stærkt dansk forsvar",
+          "type": "check",
+          "items": [
+            "Vi skal leve op til NATO-målsætningen og bruge 3,5 % af BNP på forsvaret."
+          ]
+        },
+        {
+          "heading": "Støtte til Ukraine",
+          "type": "check",
+          "items": [
+            "Vi støtter Ukraine. Deres kamp for frihed er også en del af vores kamp for en mere demokratisk og regelbaseret verden."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "klima",
+      "title": "Klima",
+      "lead": "Den grønne omstilling skal være realistisk, seriøs og noget, alle danskere kan se sig selv i.",
+      "blocks": [
+        {
+          "heading": "Det vil vi",
+          "type": "check",
+          "items": [
+            "Minimer forbud – alle skal kunne se sig selv i den grønne omstilling.",
+            "Det skal være nemt for den enkelte dansker at træffe grønne valg.",
+            "CO2-afgift: Forureneren betaler."
+          ]
+        },
+        {
+          "heading": "Vores tilgang",
+          "type": "tags",
+          "items": [
+            "Realistisk",
+            "Seriøst",
+            "Omstillingsparat"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "uddannelse",
+      "title": "Uddannelse",
+      "lead": "Vi uddanner til fremtidens job og belønner dygtighed i de fag, der faktisk betyder noget.",
+      "blocks": [
+        {
+          "heading": "Det vil vi",
+          "type": "check",
+          "items": [
+            "Mindre fokus på gennemsnit på tværs af alle fag – og mere fokus på karakterer i de relevante fag på alle videregående uddannelser.",
+            "Fokus på at uddanne til fremtidens job. Færre egyptologer."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sundhed",
+      "title": "Sundhed",
+      "lead": "Et stærkt offentligt sundhedsvæsen med ret til hjælp ved alvorlig sygdom – og frihed til at vælge privat.",
+      "blocks": [
+        {
+          "heading": "Det vil vi",
+          "type": "check",
+          "items": [
+            "Hospitalsvæsenet skal være gratis for alle.",
+            "Alle har ret til hjælp ved alvorlig sygdom.",
+            "Tandlægen er gratis, indtil man fylder 21 år.",
+            "Man skal have mulighed for at gå til privathospital, hvis man ønsker det."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indvandring",
+      "title": "Indvandring",
+      "lead": "Man er velkommen i Danmark, hvis man bidrager positivt til samfundet.",
+      "blocks": [
+        {
+          "heading": "En indvandrer bidrager positivt, når vedkommende",
+          "type": "check",
+          "items": [
+            "er i arbejde,",
+            "deler danske værdier som demokrati og ytringsfrihed,",
+            "og ikke begår kriminalitet."
+          ]
+        },
+        {
+          "heading": "Regler for ophold",
+          "type": "check",
+          "items": [
+            "Du kan være arbejdsløs i op til ét år, før du sendes ud.",
+            "Har du arbejdet i mere end ét år, kan du blive i den periode, du har arbejdet – op til 3 års arbejde.",
+            "Uanset hvad kan du maksimalt være arbejdsløs i 3 år."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "eu",
+      "title": "EU",
+      "lead": "Vi bliver i EU – og arbejder for et stærkere, friere og mere handlekraftigt Europa.",
+      "blocks": [
+        {
+          "heading": "Det vil vi i EU",
+          "type": "check",
+          "items": [
+            "Arbejde for en strammere fælles asylpolitik.",
+            "En fælles grøn omstilling.",
+            "Styrke det frie marked, så det er lettere at handle på tværs af lande.",
+            "Fælles forsvarsindkøb, så militært isenkram kan købes billigere.",
+            "Få Ukraine med i EU og udvide unionen, så den står stærkere globalt."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "stemmeret",
+      "title": "Stemmeret",
+      "lead": "Demokrati er et fælles ansvar. Den, der bidrager til samfundet, er med til at bestemme dets retning.",
+      "blocks": [
+        {
+          "heading": "Hvem må stemme?",
+          "type": "check",
+          "items": [
+            "Man er fyldt 18 år.",
+            "Man bidrager til samfundet – gennem skat, ydelser eller uddannelse.",
+            "Ufrivilligt arbejdsløse beholder stemmeretten: ét års arbejde giver ét års stemmeret som ledig, to års arbejde giver to år og så fremdeles – dog højst 5 år."
+          ]
+        },
+        {
+          "heading": "Hvem må ikke stemme?",
+          "type": "cross",
+          "items": [
+            "Man er under 18 år.",
+            "Man bidrager ikke økonomisk til samfundet.",
+            "Man har været pensionist i mere end 5 år.",
+            "Man er ikke i stand til at tage vare på sig selv. Der kan gøres undtagelser – fx ved deltidsarbejde – men det kræver en lægelig godkendelse (mental sundhedserklæring)."
+          ]
+        }
+      ]
+    }
+  ]
+}

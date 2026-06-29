@@ -1,0 +1,10 @@
+# Netlify – statisk site uden build-step.
+[build]
+  publish = "."
+  command = ""
+
+# Pæne fejl-/admin-stier
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

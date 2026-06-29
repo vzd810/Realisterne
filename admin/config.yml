@@ -1,0 +1,117 @@
+# =============================================================================
+#  Decap CMS konfiguration for Modernistisk Enevælde
+# =============================================================================
+#
+#  >>> VIGTIGT: ERSTAT HELE 'backend:'-BLOKKEN NEDENFOR <<<
+#  Når du opretter sitet på https://decapbridge.com, genererer DecapBridge en
+#  færdig 'backend:'-blok (med gateway_url + auth-felter). Kopiér den ind her,
+#  i stedet for blokken nedenfor. Se SETUP.md, trin 4.
+#
+#  Pladsholder (virker IKKE før den er erstattet med DecapBridges egen blok):
+backend:
+  name: git-gateway
+  repo: DIN-GITHUB-BRUGER/modernistisk-enevaelde   # <-- ret til dit repo (org/repo)
+  branch: main
+  # DecapBridge tilføjer her fx:
+  #   gateway_url: https://gateway.decapbridge.com
+  #   auth_endpoint: ...   (kopiér de præcise værdier fra DecapBridge-dashboardet)
+  commit_messages:
+    create: 'Opret {{collection}} "{{slug}}"'
+    update: 'Opdater {{collection}} "{{slug}}"'
+    delete: 'Slet {{collection}} "{{slug}}"'
+    uploadMedia: 'Upload "{{path}}"'
+    deleteMedia: 'Slet "{{path}}"'
+
+# Hvor uploadede billeder (fx nyt logo) gemmes:
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  # ---------------------------------------------------------------- Generelt
+  - name: "site"
+    label: "Generelt (forside, logo, kontakt)"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "generelt"
+        label: "Generelle tekster og logo"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - { name: "partyName", label: "Partinavn", widget: "string" }
+          - { name: "tagline", label: "Slogan (vises under logoet)", widget: "string" }
+          - { name: "logo", label: "Logo (upload nyt billede her)", widget: "image", required: false }
+          - { name: "heroEyebrow", label: "Forside – lille overskrift", widget: "string" }
+          - { name: "heroHeading", label: "Forside – stor overskrift", widget: "string" }
+          - { name: "heroText", label: "Forside – introtekst", widget: "text" }
+          - { name: "ideaHeading", label: "Vores idé – overskrift", widget: "string" }
+          - { name: "ideaText", label: "Vores idé – tekst", widget: "text" }
+          - { name: "pmName", label: "Statsministerkandidat – navn", widget: "string" }
+          - { name: "pmText", label: "Statsministerkandidat – tekst", widget: "text" }
+          - { name: "contactEmail", label: "Kontakt – e-mail", widget: "string" }
+          - { name: "contactAddress", label: "Kontakt – adresse", widget: "string" }
+          - { name: "footerMission", label: "Footer/Om os – missionstekst", widget: "text" }
+
+  # ---------------------------------------------------------------- Mærkesager
+  - name: "maerkesager"
+    label: "Mærkesager"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "maerkesager"
+        label: "Mærkesager"
+        file: "data/maerkesager.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Mærkesager"
+            label_singular: "Mærkesag"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "Overskrift", widget: "string" }
+              - { name: "text", label: "Tekst", widget: "text" }
+
+  # ---------------------------------------------------------------- Politik
+  - name: "politik"
+    label: "Politik (emnesider)"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "politik"
+        label: "Politikområder"
+        file: "data/politik.json"
+        format: "json"
+        fields:
+          - name: "areas"
+            label: "Områder"
+            label_singular: "Område"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "slug", label: "Slug (styrer sidens adresse – lad være med at ændre)", widget: "string" }
+              - { name: "title", label: "Titel", widget: "string" }
+              - { name: "lead", label: "Indledning", widget: "text" }
+              - name: "blocks"
+                label: "Afsnit"
+                label_singular: "Afsnit"
+                widget: "list"
+                summary: "{{fields.heading}}"
+                fields:
+                  - { name: "heading", label: "Overskrift", widget: "string" }
+                  - name: "type"
+                    label: "Punkt-stil"
+                    widget: "select"
+                    default: "check"
+                    options:
+                      - { label: "Flueben (positiv liste)", value: "check" }
+                      - { label: "Kryds (negativ liste)", value: "cross" }
+                      - { label: "Nøgleord (tags)", value: "tags" }
+                  - name: "items"
+                    label: "Punkter"
+                    label_singular: "Punkt"
+                    widget: "list"
+                    field: { name: "value", label: "Punkt", widget: "string" }
