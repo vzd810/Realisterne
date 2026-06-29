@@ -115,3 +115,22 @@ collections:
                     label_singular: "Punkt"
                     widget: "list"
                     field: { name: "value", label: "Punkt", widget: "string" }
+
+  # ---------------------------------------------------------------- Hvorfor stemme
+  - name: "hvorfor"
+    label: "Hvorfor stemme på os"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "hvorfor"
+        label: "Hvorfor stemme på os"
+        file: "data/hvorfor.json"
+        format: "json"
+        fields:
+          - { name: "title", label: "Overskrift", widget: "string" }
+          - name: "items"
+            label: "Punkter"
+            label_singular: "Punkt"
+            widget: "list"
+            field: { name: "value", label: "Punkt", widget: "string" }

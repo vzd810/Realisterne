@@ -24,8 +24,14 @@
     return h+'</section>';
   }
 
-  Promise.all([load("data/site.json"),load("data/maerkesager.json"),load("data/politik.json")]).then(function(res){
-    var site=res[0], maerk=res[1], pol=res[2];
+  Promise.all([load("data/site.json"),load("data/maerkesager.json"),load("data/politik.json"),load("data/hvorfor.json")]).then(function(res){
+    var site=res[0], maerk=res[1], pol=res[2], hvorfor=res[3];
+
+    if(hvorfor){
+      if(hvorfor.title) setText("#hvorfor-title", hvorfor.title);
+      var hl=document.querySelector("#hvorfor-list");
+      if(hl && hvorfor.items){ hl.innerHTML = hvorfor.items.map(function(t){ return "<li>"+esc(t)+"</li>"; }).join(""); }
+    }
 
     if(site){
       if(site.logo){ qsa("[data-logo]").forEach(function(img){ img.setAttribute("src", site.logo); }); }

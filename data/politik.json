@@ -10,7 +10,9 @@
           "type": "check",
           "items": [
             "Lavere skat på arbejde, så det altid kan betale sig at yde en ekstra indsats.",
-            "Mere favorable vilkår for iværksættere, så flere tør starte og bygge virksomhed i Danmark."
+            "Mere favorable vilkår for iværksættere, så flere tør starte og bygge virksomhed i Danmark.",
+            "Et virksomhedsfrikort: de første 250.000 kr., en virksomhed tjener om året, er skattefri.",
+            "Man skal ikke betale skat af bundlinjen."
           ]
         }
       ]
@@ -25,6 +27,14 @@
           "type": "check",
           "items": [
             "Vi skal leve op til NATO-målsætningen og bruge 3,5 % af BNP på forsvaret."
+          ]
+        },
+        {
+          "heading": "Flere frivillige – uden tvang",
+          "type": "check",
+          "items": [
+            "Vi skal brande forsvaret bedre, så flere melder sig som frivillige værnepligtige.",
+            "Vi går ikke ind for tvang – men anerkender, at det kan blive nødvendigt, hvis vi ikke får nok værnepligtige ind."
           ]
         },
         {
